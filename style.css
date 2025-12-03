@@ -1,0 +1,1072 @@
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+
+
+
+ body {
+   margin: 0;
+ }
+
+
+ .container {
+   width: 1200px;
+   border: 1px solid green;
+   margin: 0 auto;
+ }
+
+ @media (max-width: 390px) {
+   .container {
+     width: 350px;
+     border: 4px solid green;
+     margin: 0 auto;
+   }
+ }
+
+ .menu-list {
+   list-style: none;
+   display: flex;
+   gap: 30px;
+   background-color: lightpink;
+   padding: 5px;
+   justify-content: space-between;
+   text-transform: uppercase;
+   font-size: 13px
+ }
+
+ @media (max-width: 390px) {
+   .menu-list {
+     list-style: none;
+     display: flex;
+     gap: 22px;
+     background-color: lightpink;
+     padding: 5px;
+     justify-content: space-between;
+     text-transform: uppercase;
+     font-size: 13px
+   }
+ }
+
+
+ .menu-link {
+   text-decoration: none;
+   color: black;
+   padding: 10px;
+   font-family: "Dancing Script", cursive;
+ }
+
+ @media (max-width: 390px) {
+   .menu-link {
+     text-decoration: none;
+     color: black;
+     padding: 10px;
+     font-family: "Dancing Script", cursive;
+     font-size: 11px;
+     display: flex;
+     justify-content: center;
+   }
+ }
+
+ .menu-link:hover {
+   background-color: rgb(210, 84, 160);
+ }
+
+ .main-title {
+   font-family: "Caveat", cursive;
+   text-align: center;
+   text-shadow: 2px 2px 4px pink
+ }
+
+ .main-photo {
+   border: 1px solid red;
+ }
+
+ .main-photo-wrapper {
+   margin: 0 auto;
+   width: 500px;
+ }
+
+ .main-description {
+   text-align: center;
+   font-family: "Josefin Sans", sans-serif;
+   color: azure;
+ }
+
+ .popular-songs {
+   display: flex;
+   gap: 30px;
+   align-items: center;
+   list-style: none;
+   padding-left: 0;
+   flex-wrap: wrap;
+ }
+
+ .folklore-songs {
+   display: flex;
+   gap: 20px;
+   list-style: none;
+ }
+
+ @media (max-width: 390px) {
+   .folklore-songs {
+     display: flex;
+     gap: 20px;
+     list-style: none;
+     padding-left: 0;
+     flex-direction: column;
+   }
+ }
+
+ .folklore-item {
+   /* border: 1px solid red; */
+   border-radius: 20px;
+   padding: 10px;
+   background-color: rgba(238, 147, 234, 0.504);
+   width: 330px;
+   box-shadow: 5px 5px 12px 2px rgba(254, 45, 240, 0.3);
+ }
+
+ .folklore-audio {
+   width: 100%;
+   margin-top: 10px;
+ }
+
+ .folklore-image {
+   border-radius: 20px;
+   width: 100%;
+ }
+
+ .music-videos {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+ }
+
+ @media (max-width: 390px) {
+   .music-videos {
+     list-style: none;
+     display: flex;
+     gap: 20px;
+     padding-left: 0;
+     flex-direction: column;
+     margin: 0 auto;
+   }
+ }
+
+ .video {
+   border-radius: 20px;
+   width: 300px;
+   box-shadow: 5px 5px 12px 2px rgba(255, 141, 1, 0.3);
+ }
+
+ @media (max-width: 390px) {
+   .video {
+     border-radius: 20px;
+     width: 350px;
+     box-shadow: 5px 5px 12px 2px rgba(255, 141, 1, 0.3);
+   }
+ }
+
+ .popular-song {
+   width: 350px;
+   /* border: 1px solid red; */
+   border-radius: 20px;
+   padding: 10px;
+   background-color: rgba(0, 255, 255, 0.31);
+   box-shadow: 5px 5px 12px 2px rgba(72, 138, 243, 0.3);
+
+ }
+
+ @media (max-width: 390px) {
+   .popular-song {
+     width: 330px;
+     /* border: 1px solid red; */
+     border-radius: 20px;
+     padding: 10px;
+     background-color: rgba(0, 255, 255, 0.31);
+     box-shadow: 5px 5px 12px 2px rgba(72, 138, 243, 0.3);
+
+   }
+ }
+
+
+ .popular-picture {
+   width: 350px;
+   border-radius: 20px;
+ }
+
+ @media (max-width: 390px) {
+   .popular-picture {
+     width: 330px;
+     border-radius: 20px;
+   }
+ }
+
+ .popular-audio {
+   width: 100%;
+ }
+
+ .link-other {
+
+   color: darkmagenta;
+   background-color: rgba(206, 125, 168, 0.45);
+   padding: 5px;
+   border-radius: 10px;
+   display: block;
+   margin: 0 auto;
+   width: 185px;
+   text-decoration: none;
+
+
+ }
+
+ .send {
+   text-decoration: none;
+   background-color: rgba(206, 125, 168, 0.45);
+   padding: 10px;
+   border-radius: 10px;
+ }
+
+ @media (max-width: 390px) {
+   .send {
+     text-decoration: none;
+     background-color: rgba(206, 125, 168, 0.45);
+     padding: 10px;
+     border-radius: 10px;
+     margin: 0 auto;
+     width: 100px;
+   }
+ }
+
+ .contacts-list {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+ }
+
+ @media (max-width: 390px) {
+   .contacts-list {
+     list-style: none;
+     display: flex;
+     gap: 20px;
+     padding-left: 0;
+     flex-direction: column;
+     margin: 0 auto;
+     margin-top: 60px;
+   }
+ }
+
+ .contacts-link {
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   background-color: rgba(255, 20, 145, 0.271);
+   padding: 10px;
+   border-radius: 10px;
+ }
+
+ @media (max-width: 390px) {
+   .contacts-list {
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+     background-color: rgba(255, 20, 145, 0.271);
+     padding: 10px;
+     border-radius: 10px;
+     margin: 0 auto;
+     display: flex;
+     justify-content: end;
+     flex-direction: column;
+     gap: 25px;
+     margin-top: 43px;
+   }
+
+   .contacts-item {
+     display: flex;
+     justify-content: center;
+     width: 330px !important;
+   }
+ }
+
+ .footer-text {
+   text-align: center;
+ }
+
+ .footer {
+   background-color: rgba(135, 206, 250, 0.597);
+   margin-top: 300px;
+   display: block;
+ }
+
+ @media (max-width: 390px) {
+   .footer {
+     background-color: rgba(135, 206, 250, 0.597);
+     margin-top: 150px;
+     display: block;
+   }
+
+   .ft-fix {
+     margin-top: 250px;
+   }
+ }
+
+ .header {
+   background-image: url("./images/84add72b955c31b2c2782978e43cf4af.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .logo {
+   border-bottom-right-radius: 30px;
+ }
+
+ .download-button {
+   background-color: rgba(175, 88, 159, 0.499);
+   padding: 10px;
+   display: block;
+   border-radius: 5px;
+   text-decoration: none;
+   width: 170px;
+   font-size: 17px;
+   margin-left: 20px;
+   color: black;
+ }
+
+ @media (max-width: 390px) {
+   .download-button {
+     background-color: rgba(175, 88, 159, 0.499);
+     padding: 10px;
+     display: block;
+     border-radius: 5px;
+     text-decoration: none;
+     width: 170px;
+     font-size: 17px;
+     margin-left: 20px;
+     color: black;
+     text-align: center;
+   }
+ }
+
+ .download-button:hover {
+   background-color: rgba(128, 65, 116, 0.499);
+   cursor: pointer;
+
+ }
+
+ .item-song {
+   margin: 20px;
+   padding: 10px;
+   border-radius: 15px;
+   background-color: rgba(203, 105, 124, 0.387);
+
+ }
+
+ .kalyna {
+   display: block;
+   margin: 0 auto;
+ }
+
+ .popular-text {
+   text-align: center;
+   text-shadow: 2px 2px 4px red;
+   font-size: 35px;
+ }
+
+ .bounce-top {
+   animation: bounce-top 0.9s both;
+ }
+
+ @keyframes bounce-top {
+   0% {
+     transform: translateY(-45px);
+     animation-timing-function: ease-in;
+     opacity: 1;
+   }
+
+   24% {
+     opacity: 1;
+   }
+
+   40% {
+     transform: translateY(-24px);
+     animation-timing-function: ease-in;
+   }
+
+   65% {
+     transform: translateY(-12px);
+     animation-timing-function: ease-in;
+   }
+
+   82% {
+     transform: translateY(-6px);
+     animation-timing-function: ease-in;
+   }
+
+   93% {
+     transform: translateY(-4px);
+     animation-timing-function: ease-in;
+   }
+
+   25%,
+   55%,
+   75%,
+   87% {
+     transform: translateY(0px);
+     animation-timing-function: ease-out;
+   }
+
+   100% {
+     transform: translateY(0px);
+     animation-timing-function: ease-out;
+     opacity: 1;
+   }
+ }
+
+ .song-text {
+   text-align: center;
+   font-size: 25px;
+ }
+
+ .item-song-wrapper {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+ }
+
+ @media (max-width: 390px) {
+   .item-song-wrapper {
+     display: flex;
+     gap: 20px;
+     align-items: center;
+     flex-direction: column;
+   }
+ }
+
+ .item-song-audio {
+   width: 100%;
+   z-index: -5;
+ }
+
+ .music-videos-item {
+   width: 430px;
+
+ }
+
+ .folklore-tittle {
+   text-align: center;
+   text-shadow: 2px 2px 4px violet;
+   font-size: 27px;
+ }
+
+ .folklore-img {
+   display: block;
+   margin: 0 auto;
+ }
+
+ .music-videos-tittle {
+   text-align: center;
+   text-shadow: 2px 2px 4px greenyellow;
+   font-size: 25px;
+ }
+
+ .music-videos-image {
+   display: block;
+   margin: 0 auto;
+ }
+
+ .contacts-tittle {
+   text-align: center;
+   text-shadow: 2px 2px 4px rgb(230, 7, 255);
+   font-size: 25px;
+ }
+
+ .contacts-image {
+   display: block;
+   margin: 0 auto;
+ }
+
+ .contacts-item {
+   width: 400px;
+ }
+
+ table caption {
+   text-align: center;
+   font-size: 20px;
+ }
+
+ /* We "collapse" the frames of adjacent cells */
+ table {
+   border-collapse: collapse;
+ }
+
+ /* 
+  Add a border and padding to the cells, the distance from the content to the border.
+  To control the vertical position, the caption-side property is used.
+*/
+ table th,
+ table td {
+   padding: 10px;
+   border: 1px solid #2a2a2a;
+ }
+
+ .table-wrapper {
+   width: 500px;
+   border: 1px solid rgb(2, 0, 0);
+   margin: 0 auto;
+   margin-top: 50px;
+   margin-bottom: 50px;
+ }
+
+ .pane {
+   display: none;
+   margin-top: 8px;
+ }
+
+ .pane.is-active {
+   display: block;
+ }
+
+ .controls {
+   display: flex;
+   gap: 18px;
+   justify-content: center;
+   padding: 15px;
+ }
+
+ .folklore-genre {
+   text-align: center;
+ }
+
+ .folklore-genre-image {
+   margin: 0 auto;
+   display: block;
+   border-radius: 15px;
+   box-shadow: 5px 5px 12px 2px rgba(243, 72, 212, 0.3);
+ }
+
+
+ .card-set {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   padding: 0;
+   list-style: none;
+ }
+
+ @media (max-width: 390px) {
+   .card-set {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+     padding: 0;
+     list-style: none;
+     margin: 0 auto;
+     width: 310px;
+
+   }
+ }
+
+
+ .slide-in-fwd-center {
+   animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+ }
+
+ @keyframes slide-in-fwd-center {
+   0% {
+     transform: translateZ(-1400px);
+     opacity: 0;
+   }
+
+   100% {
+     transform: translateZ(0);
+     opacity: 1;
+   }
+ }
+
+
+ .item {
+   /*  Set the width of the elements  */
+   /* flex-basis: calc((100% - 20px) / 3);  */
+   width: 230px;
+   padding: 10px;
+   background-color: #79b8f092;
+   border-radius: 4px;
+   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+ }
+
+ @media (max-width: 390px) {
+   .item {
+
+     width: 310px;
+     padding: 10px;
+     background-color: #79b8f092;
+     border-radius: 4px;
+     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+   }
+
+ }
+
+ .item h2 {
+   margin-top: 0;
+   font-size: 20px;
+ }
+
+ .item p {
+   margin: 0;
+
+ }
+
+ .container-advantages {
+   max-width: 780px;
+   padding: 5px;
+   margin-left: auto;
+   margin-right: auto;
+   border: 1px solid red;
+ }
+
+ .main-hero {
+   background-image: url("https://images.squarespace-cdn.com/content/v1/5fc40203be9b6939511e70f5/3bb18395-298c-448f-9669-9b02037e6927/alabamasunflowers-35.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 200px;
+   margin-top: -15px;
+ }
+
+ .section-popular-songs {
+   background-image: url("https://ukrinfo-data.s3.amazonaws.com/media/450082/conversions/01-extra-extra-large.webp");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 200px;
+   margin-top: -15px;
+
+ }
+
+ .section-folk-songs {
+   background-image: url("https://cdn2.goloskarpat.info/images/doc/1/5/155733786568de9c5cb8a05_image.jpeg_to.webp");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 200px;
+   margin-top: -15px;
+ }
+
+ .section-music-videos {
+   background-image: url("https://regenerationinternational.org/wp-content/uploads/bigstock-Wheat-Field-Ears-Of-Golden-Wh-409666264-scaled.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 200px;
+   margin-top: -15px;
+ }
+
+ .section-contacts {
+   background-image: url("https://perthisok.com/_next/image/?url=https%3A%2F%2Fcms.perthisok.com%2Fwp-content%2Fuploads%2F2025%2F01%2Fjoyful-little-art-space-sunflowers-boyup-brook.jpg&w=3840&q=75");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 200px;
+   margin-top: -15px;
+
+ }
+
+ .button-control {
+   padding: 10px;
+   border-radius: 10px;
+   border: none;
+   background-color: rgba(235, 137, 238, 0.353);
+   transition-property: background-color, transform;
+   transition-duration: 500ms;
+   transition-timing-function: linear;
+
+ }
+
+ .button-control:hover {
+   background-color: rgba(225, 76, 230, 0.391);
+   cursor: pointer;
+   transform: rotate(180deg);
+
+
+ }
+
+ .img-gallery {
+   display: block;
+   max-width: 100%;
+   height: auto;
+ }
+
+ .container-gallery {
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+ }
+
+ @media (max-width: 390px) {
+   .container-gallery {
+     display: flex;
+     justify-content: center;
+     margin: 0 auto;
+     flex-direction: column;
+   }
+ }
+
+ .thumb {
+   position: relative;
+   margin: 10px;
+   border-radius: 4px;
+   overflow: hidden;
+   background-color: #fff;
+   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+ }
+
+ .thumb>.label {
+   position: absolute;
+   top: 0;
+   right: 10px;
+   margin: 0;
+   padding: 8px 16px;
+   border-bottom-left-radius: 4px;
+
+   font-family: sans-serif;
+   font-size: 24px;
+   background-color: #2196f3;
+   color: #fff;
+ }
+
+ .bandura {
+   object-fit: cover;
+   height: 100%;
+ }
+
+ .chat-button {
+   position: fixed;
+   right: 30px;
+   bottom: 30px;
+
+   display: inline-block;
+   width: 64px;
+   height: 64px;
+
+   margin: 0;
+   padding: 0;
+   border: none;
+   background-color: transparent;
+
+   background-image: url("./images/email+inbox+letter+mail+message+messages+icon-1320196706209650448_256px.png");
+   background-size: contain;
+
+   cursor: pointer;
+ }
+
+ .container-box {
+   min-height: 100vh;
+   position: relative;
+   z-index: -5;
+ }
+
+ .box {
+   position: absolute;
+   height: 150px;
+   width: 150px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 4px;
+   font-size: 64px;
+   color: #fff;
+
+   box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+ }
+
+ .box:nth-child(1) {
+   top: 20px;
+   left: 130px;
+   background-image: url("https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/12057/production/_111351837_769247.jpg.webp");
+   background-size: contain;
+   z-index: 2;
+   box-shadow: 3px 3px 10px 2px black;
+   transform: rotate(-10deg);
+ }
+
+
+ .box:nth-child(2) {
+   top: 30px;
+   left: 250px;
+   background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Т._Г._Шевченко._Квітень_1859.jpg");
+   background-size: contain;
+   z-index: 2;
+   box-shadow: 3px 3px 10px 2px black;
+   transform: rotate(7deg);
+ }
+
+ .box:nth-child(3) {
+   top: 175px;
+   left: 240px;
+   background-image: url("https://viche.ck.ua/wp-content/uploads/2020/01/280820172234163519315.jpg");
+   background-size: contain;
+   z-index: 1;
+   box-shadow: 3px 3px 10px 2px black;
+   transform: rotate(8deg);
+ }
+
+ .box:nth-child(4) {
+   top: 165px;
+   left: 110px;
+   background-image: url("https://onlyart.org.ua/wp-content/uploads/2022/12/Lesya-Ukrainka.jpg");
+   background-size: contain;
+   box-shadow: 3px 3px 10px 2px black;
+   transform: rotate(7deg);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 390px) {
+   .box:nth-child(1) {
+     top: 20px;
+     left: 30px;
+     background-image: url("https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/12057/production/_111351837_769247.jpg.webp");
+     background-size: contain;
+     z-index: 2;
+     box-shadow: 3px 3px 10px 2px black;
+     transform: rotate(-10deg);
+   }
+
+   .box:nth-child(2) {
+     top: 30px;
+     left: 170px;
+     background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Т._Г._Шевченко._Квітень_1859.jpg");
+     background-size: contain;
+     z-index: 2;
+     box-shadow: 3px 3px 10px 2px black;
+     transform: rotate(7deg);
+   }
+
+   .box:nth-child(3) {
+     top: 175px;
+     left: 170px;
+     background-image: url("https://viche.ck.ua/wp-content/uploads/2020/01/280820172234163519315.jpg");
+     background-size: contain;
+     z-index: 1;
+     box-shadow: 3px 3px 10px 2px black;
+     transform: rotate(8deg);
+   }
+
+   .box:nth-child(4) {
+     top: 165px;
+     left: 10px;
+     background-image: url("https://onlyart.org.ua/wp-content/uploads/2022/12/Lesya-Ukrainka.jpg");
+     background-size: contain;
+     box-shadow: 3px 3px 10px 2px black;
+     transform: rotate(7deg);
+   }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+ .vyshyvanky {
+   position: relative;
+   width: 300px;
+   height: 300px;
+   margin: 0 auto;
+   background-color: #bdbdbd;
+   background-image: url("https://vyshyvanka.net/files/uploads/podilska-vyshyvka.png");
+   background-size: contain;
+   overflow: hidden;
+ }
+
+ .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #3f51b5;
+
+   transform: translatey(100%);
+   transition: transform 250ms ease-in-out;
+ }
+
+ .vyshyvanky:hover .overlay {
+   transform: translatey(0);
+ }
+
+ .overlay p {
+   color: #fff;
+   padding: 10px;
+   margin: 0;
+   font-size: 18px;
+ }
+
+ .overlay code {
+   display: inline-block;
+   padding: 2px 4px;
+   border-radius: 2px;
+   background-color: #fff;
+   color: #2a2a2a;
+ }
+
+ .poltavska {
+   background-image: url("https://honchar.org.ua/upload/media/2021/12/1061b2a2e7068f7-kn-331-3_crop.jpg");
+ }
+
+ .chernihivska {
+   background-image: url("https://st.violity.com/auction/big/auctions/18/27/9/6/182709618.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .vyshyvky {
+   display: flex;
+   list-style: none;
+   gap: 50px;
+   margin-left: 70px;
+ }
+
+ @media (max-width: 390px) {
+   .vyshyvky {
+     display: flex;
+     list-style: none;
+     gap: 50px;
+     flex-direction: column;
+     padding-left: 0;
+     margin-left: 0;
+   }
+ }
+
+ .vyshyvky-text {
+   text-align: center;
+ }
+
+ .backdrop {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   opacity: 1;
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   /* Додаємо плавний перехід */
+ }
+
+ .backdrop.is-hidden {
+   opacity: 0;
+   pointer-events: none;
+   /* Критично для приховування кліків */
+ }
+
+ .no-scroll {
+   overflow: hidden;
+ }
+
+ .modal {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   min-width: 400px;
+   min-height: 300px;
+   padding: 15px;
+   background-color: skyblue;
+   transform: translate(-50%, -50%);
+   z-index: 10000000;
+ }
+
+ @media (max-width: 390px) {
+   .modal {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     max-width: 380px !important;
+     min-height: 300px;
+     padding: 15px;
+     background-color: skyblue;
+     transform: translate(-50%, -50%);
+     z-index: 10000000;
+   }
+ }
+
+ .popular-gallery {
+   width: 400px;
+ }
+
+ .bands-gallery {
+   list-style: none;
+   padding-left: 0;
+ }
+
+ .bands-text {
+   font-family: "Pacifico", cursive;
+   text-align: center;
+ }
+
+ .download-tittle {}
+
+ @media (max-width: 390px) {
+   .download-tittle {
+     text-align: center;
+   }
+ }
+
+ .wrapper-send {}
+
+ @media (max-width: 390px) {
+   .wrapper-send {
+     margin: 0 auto;
+     width: 150px;
+   }
+ }
+
+ .open-gallery {}
+
+ @media (max-width: 390px) {
+   .open-gallery {
+     margin: 0 auto;
+     width: 150px;
+   }
+ }
+
+ .btn-open {}
+
+ @media (max-width: 390px) {
+   .btn-open {
+     padding: 10px 15px;
+     border-radius: 30px;
+     border: none;
+     background-color: rgb(234, 247, 3);
+     box-shadow: 5px 5px 12px 2px rgba(254, 45, 240, 0.3);
+   }
+
+   .btn-open:hover {
+     cursor: pointer;
+     background-color: rgb(181, 190, 13);
+   }
+ }
